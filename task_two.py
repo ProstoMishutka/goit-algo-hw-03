@@ -4,7 +4,8 @@ def get_numbers_ticket(min, max, quantity):
     try:
         list_numbers = []
         random_numbers = []
-        if min >= 1 and max <= 1000 and min <= quantity <= max:
+        differ_number = (max + 1) - min  
+        if min >= 1 and max <= 1000 and quantity <= differ_number:  
             for num in range(min, max + 1):
                 list_numbers.append(num)
             random_numbers = random.sample(list_numbers, quantity)
