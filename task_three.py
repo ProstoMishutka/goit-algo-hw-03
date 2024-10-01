@@ -10,4 +10,4 @@ def normalize_phone(phone_number):
     else:
         return number
     
-print(normalize_phone("38067\\t123 4567"))
+print(normalize_phone("067\\t123 4567"))
